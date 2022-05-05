@@ -22,9 +22,6 @@
     <Filter Include="源文件\md5">
       <UniqueIdentifier>{6f86d385-535f-48be-9e29-2a2b6cd33f39}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\imgui">
-      <UniqueIdentifier>{fc15b1c2-2ddc-4d3e-8a53-60d09c9fe2d0}</UniqueIdentifier>
-    </Filter>
     <Filter Include="源文件\libyuv">
       <UniqueIdentifier>{562e1810-42e8-4c8d-8037-e3673d1b4608}</UniqueIdentifier>
     </Filter>
@@ -33,9 +30,6 @@
     </Filter>
     <Filter Include="源文件\libyuv\include">
       <UniqueIdentifier>{c218d111-7861-491d-ada4-ab2323859e15}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\imgui\GL">
-      <UniqueIdentifier>{e59cb818-768f-489d-a4b7-f0e1891ca409}</UniqueIdentifier>
     </Filter>
     <Filter Include="源文件\codec">
       <UniqueIdentifier>{2b2853c2-f9ea-4bb8-b06f-79a91a7c1bdc}</UniqueIdentifier>
@@ -63,6 +57,12 @@
     </Filter>
     <Filter Include="源文件\capture\AudioCapture">
       <UniqueIdentifier>{30c25f44-00c1-402d-a57c-9279e6fa7497}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui_latest">
+      <UniqueIdentifier>{a8234fb3-c463-4781-b234-ee90f675de71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui_latest\GL">
+      <UniqueIdentifier>{06b2125e-7436-47a1-9462-ff0340e13aa0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -188,24 +188,6 @@
     </ClCompile>
     <ClCompile Include="xop\RtmpHandshake.cpp">
       <Filter>源文件\xop</Filter>
-    </ClCompile>
-    <ClCompile Include="imgui\imgui.cpp">
-      <Filter>源文件\imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="imgui\imgui_impl_dx9.cpp">
-      <Filter>源文件\imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="imgui\imgui_impl_sdl.cpp">
-      <Filter>源文件\imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="imgui\imgui_impl_win32.cpp">
-      <Filter>源文件\imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="imgui\imgui_widgets.cpp">
-      <Filter>源文件\imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="imgui\imgui_draw.cpp">
-      <Filter>源文件\imgui</Filter>
     </ClCompile>
     <ClCompile Include="MainWindow.cpp">
       <Filter>源文件</Filter>
@@ -357,18 +339,6 @@
     <ClCompile Include="libyuv\source\video_common.cc">
       <Filter>源文件\libyuv\source</Filter>
     </ClCompile>
-    <ClCompile Include="imgui\imgui_impl_opengl2.cpp">
-      <Filter>源文件\imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="imgui\imgui_demo.cpp">
-      <Filter>源文件\imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="imgui\imgui_impl_opengl3.cpp">
-      <Filter>源文件\imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="imgui\gl3w\GL\gl3w.c">
-      <Filter>源文件\imgui\GL</Filter>
-    </ClCompile>
     <ClCompile Include="codec\avcodec\aac_encoder.cpp">
       <Filter>源文件\codec\avcodec</Filter>
     </ClCompile>
@@ -464,6 +434,42 @@
     </ClCompile>
     <ClCompile Include="codec\avcodec\audio_resampler.cpp">
       <Filter>源文件\codec\avcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_latest\imgui.cpp">
+      <Filter>imgui_latest</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_latest\imgui_demo.cpp">
+      <Filter>imgui_latest</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_latest\imgui_draw.cpp">
+      <Filter>imgui_latest</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_latest\imgui_impl_dx9.cpp">
+      <Filter>imgui_latest</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_latest\imgui_impl_glfw.cpp">
+      <Filter>imgui_latest</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_latest\imgui_impl_opengl2.cpp">
+      <Filter>imgui_latest</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_latest\imgui_impl_opengl3.cpp">
+      <Filter>imgui_latest</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_latest\imgui_impl_sdl.cpp">
+      <Filter>imgui_latest</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_latest\imgui_impl_win32.cpp">
+      <Filter>imgui_latest</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_latest\imgui_widgets.cpp">
+      <Filter>imgui_latest</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_latest\imgui_tables.cpp">
+      <Filter>imgui_latest</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_latest\gl3w\GL\gl3w.c">
+      <Filter>imgui_latest\GL</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -623,33 +629,6 @@
     <ClInclude Include="xop\RtmpHandshake.h">
       <Filter>源文件\xop</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\imconfig.h">
-      <Filter>源文件\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="imgui\imgui.h">
-      <Filter>源文件\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="imgui\imgui_impl_dx9.h">
-      <Filter>源文件\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="imgui\imgui_impl_sdl.h">
-      <Filter>源文件\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="imgui\imgui_impl_win32.h">
-      <Filter>源文件\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="imgui\imgui_internal.h">
-      <Filter>源文件\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="imgui\imstb_rectpack.h">
-      <Filter>源文件\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="imgui\imstb_textedit.h">
-      <Filter>源文件\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="imgui\imstb_truetype.h">
-      <Filter>源文件\imgui</Filter>
-    </ClInclude>
     <ClInclude Include="MainWindow.h">
       <Filter>源文件</Filter>
     </ClInclude>
@@ -658,18 +637,6 @@
     </ClInclude>
     <ClInclude Include="libyuv\include\libyuv.h">
       <Filter>源文件\libyuv\include</Filter>
-    </ClInclude>
-    <ClInclude Include="imgui\imgui_impl_opengl2.h">
-      <Filter>源文件\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="imgui\imgui_impl_opengl3.h">
-      <Filter>源文件\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="imgui\gl3w\GL\gl3w.h">
-      <Filter>源文件\imgui\GL</Filter>
-    </ClInclude>
-    <ClInclude Include="imgui\gl3w\GL\glcorearb.h">
-      <Filter>源文件\imgui\GL</Filter>
     </ClInclude>
     <ClInclude Include="codec\avcodec\aac_encoder.h">
       <Filter>源文件\codec\avcodec</Filter>
@@ -784,6 +751,51 @@
     </ClInclude>
     <ClInclude Include="codec\avcodec\audio_resampler.h">
       <Filter>源文件\codec\avcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_latest\imconfig.h">
+      <Filter>imgui_latest</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_latest\imgui.h">
+      <Filter>imgui_latest</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_latest\imgui_impl_dx9.h">
+      <Filter>imgui_latest</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_latest\imgui_impl_glfw.h">
+      <Filter>imgui_latest</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_latest\imgui_impl_opengl2.h">
+      <Filter>imgui_latest</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_latest\imgui_impl_opengl3.h">
+      <Filter>imgui_latest</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_latest\imgui_impl_sdl.h">
+      <Filter>imgui_latest</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_latest\imgui_impl_win32.h">
+      <Filter>imgui_latest</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_latest\imgui_internal.h">
+      <Filter>imgui_latest</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_latest\imstb_rectpack.h">
+      <Filter>imgui_latest</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_latest\imstb_textedit.h">
+      <Filter>imgui_latest</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_latest\imstb_truetype.h">
+      <Filter>imgui_latest</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_latest\imgui_impl_opengl3_loader.h">
+      <Filter>imgui_latest</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_latest\gl3w\GL\gl3w.h">
+      <Filter>imgui_latest\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_latest\gl3w\GL\glcorearb.h">
+      <Filter>imgui_latest\GL</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -2,11 +2,11 @@
 #define OVERLAY_H
 
 #include "SDL.h"
-#include "imgui/imgui.h"
-#include "imgui/imgui_impl_dx9.h" 
-#include "imgui/imgui_impl_sdl.h"
-#include "imgui/imgui_impl_glfw.h"
-#include "imgui/imgui_impl_opengl3.h"
+#include "imgui_latest/imgui.h"
+#include "imgui_latest/imgui_impl_dx9.h" 
+#include "imgui_latest/imgui_impl_sdl.h"
+#include "imgui_latest/imgui_impl_glfw.h"
+#include "imgui_latest/imgui_impl_opengl3.h"
 #include <d3d9.h>
 //#include <SDL_opengl.h>
 #include <string>

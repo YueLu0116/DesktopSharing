@@ -14,20 +14,20 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{77F4AAA4-0051-480A-9168-A6CB8927FB6E}</ProjectGuid>
     <RootNamespace>DesktopSharing</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
     <SpectreMitigation>false</SpectreMitigation>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
     <SpectreMitigation>false</SpectreMitigation>
@@ -123,16 +123,18 @@
     <ClCompile Include="codec\QsvCodec\src\mfx_plugin_hive.cpp" />
     <ClCompile Include="codec\QsvCodec\src\mfx_win_reg_key.cpp" />
     <ClCompile Include="codec\QsvCodec\src\qsv_main.cpp" />
-    <ClCompile Include="imgui\gl3w\GL\gl3w.c" />
-    <ClCompile Include="imgui\imgui.cpp" />
-    <ClCompile Include="imgui\imgui_demo.cpp" />
-    <ClCompile Include="imgui\imgui_draw.cpp" />
-    <ClCompile Include="imgui\imgui_impl_dx9.cpp" />
-    <ClCompile Include="imgui\imgui_impl_opengl2.cpp" />
-    <ClCompile Include="imgui\imgui_impl_opengl3.cpp" />
-    <ClCompile Include="imgui\imgui_impl_sdl.cpp" />
-    <ClCompile Include="imgui\imgui_impl_win32.cpp" />
-    <ClCompile Include="imgui\imgui_widgets.cpp" />
+    <ClCompile Include="imgui_latest\gl3w\GL\gl3w.c" />
+    <ClCompile Include="imgui_latest\imgui.cpp" />
+    <ClCompile Include="imgui_latest\imgui_demo.cpp" />
+    <ClCompile Include="imgui_latest\imgui_draw.cpp" />
+    <ClCompile Include="imgui_latest\imgui_impl_dx9.cpp" />
+    <ClCompile Include="imgui_latest\imgui_impl_glfw.cpp" />
+    <ClCompile Include="imgui_latest\imgui_impl_opengl2.cpp" />
+    <ClCompile Include="imgui_latest\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="imgui_latest\imgui_impl_sdl.cpp" />
+    <ClCompile Include="imgui_latest\imgui_impl_win32.cpp" />
+    <ClCompile Include="imgui_latest\imgui_tables.cpp" />
+    <ClCompile Include="imgui_latest\imgui_widgets.cpp" />
     <ClCompile Include="libyuv\source\compare.cc" />
     <ClCompile Include="libyuv\source\compare_common.cc" />
     <ClCompile Include="libyuv\source\compare_gcc.cc" />
@@ -264,19 +266,21 @@
     <ClInclude Include="codec\QsvCodec\src\mfx_plugin_hive.h" />
     <ClInclude Include="codec\QsvCodec\src\mfx_vector.h" />
     <ClInclude Include="codec\QsvCodec\src\mfx_win_reg_key.h" />
-    <ClInclude Include="imgui\gl3w\GL\gl3w.h" />
-    <ClInclude Include="imgui\gl3w\GL\glcorearb.h" />
-    <ClInclude Include="imgui\imconfig.h" />
-    <ClInclude Include="imgui\imgui.h" />
-    <ClInclude Include="imgui\imgui_impl_dx9.h" />
-    <ClInclude Include="imgui\imgui_impl_opengl2.h" />
-    <ClInclude Include="imgui\imgui_impl_opengl3.h" />
-    <ClInclude Include="imgui\imgui_impl_sdl.h" />
-    <ClInclude Include="imgui\imgui_impl_win32.h" />
-    <ClInclude Include="imgui\imgui_internal.h" />
-    <ClInclude Include="imgui\imstb_rectpack.h" />
-    <ClInclude Include="imgui\imstb_textedit.h" />
-    <ClInclude Include="imgui\imstb_truetype.h" />
+    <ClInclude Include="imgui_latest\gl3w\GL\gl3w.h" />
+    <ClInclude Include="imgui_latest\gl3w\GL\glcorearb.h" />
+    <ClInclude Include="imgui_latest\imconfig.h" />
+    <ClInclude Include="imgui_latest\imgui.h" />
+    <ClInclude Include="imgui_latest\imgui_impl_dx9.h" />
+    <ClInclude Include="imgui_latest\imgui_impl_glfw.h" />
+    <ClInclude Include="imgui_latest\imgui_impl_opengl2.h" />
+    <ClInclude Include="imgui_latest\imgui_impl_opengl3.h" />
+    <ClInclude Include="imgui_latest\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="imgui_latest\imgui_impl_sdl.h" />
+    <ClInclude Include="imgui_latest\imgui_impl_win32.h" />
+    <ClInclude Include="imgui_latest\imgui_internal.h" />
+    <ClInclude Include="imgui_latest\imstb_rectpack.h" />
+    <ClInclude Include="imgui_latest\imstb_textedit.h" />
+    <ClInclude Include="imgui_latest\imstb_truetype.h" />
     <ClInclude Include="libyuv\include\libyuv.h" />
     <ClInclude Include="MainWindow.h" />
     <ClInclude Include="md5\md5.hpp" />
